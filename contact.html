@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+            <img src="https://images.vexels.com/media/users/3/129266/isolated/preview/6df2dfc6d40daa8858fabe519272a0f0-avocado-circle-icon.png"
+                alt="">
+            <span>Avokado</span>
+        </div>
+
+        <input type="text" placeholder="Avokado axtarış">
+
+        <ul>
+            <li><a href="home.html">Avo Əsas Səifə</a></li>
+            <li><a href="about.html">Avo Haqda</a></li>
+            <li><a href="contact.html">Avo İle Əlaqə</a></li>
+        </ul>
+    </header>
+    <button onclick="böyük()">Lable Font</button>
+    <button onclick="balaca()">Lable Font</button>
+    <form>
+        <label for="">Avo Ad</label>
+        <input type="text" placeholder="Avo ad daxil edin">
+        <label for="">Avo Soyad</label>
+        <input type="text" placeholder="Avo soyad daxil edin">
+        <label for="">Avo Email</label>
+        <input type="text" placeholder="Avo email daxil edin">
+        <label for="">Avo Şifrə</label>
+        <input type="text" placeholder="Avo şifrə daxil edin">
+        <label for="">Avo Şifrə Təkrar</label>
+        <input type="text" placeholder="Avo şifrə təkrar daxil edin">
+
+        <input type="submit" value="Avo Əlavə Et">
+    </form>
+
+
+    <script>
+
+        const label = document.querySelectorAll('label');
+
+
+        function böyük() {
+            label.forEach(function (item) {
+                let x = getComputedStyle(item).fontSize;
+                x = parseInt(x) * 2;
+                item.style.fontSize = x + 'px';
+            })
+        }
+
+
+        function balaca() {
+            label.forEach(function (item) {
+                let x = getComputedStyle(item).fontSize;
+                x = parseInt(x) / 2;
+                item.style.fontSize = x + 'px';
+            })
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("https://t3.ftcdn.net/jpg/02/46/61/98/360_F_246619845_ieCtQVJP6TcwBCwUNoO2KFPuYoz0bbGA.jpg");
+    font-family: Verdana, sans-serif;
+}
+
+#header{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 161, 0,0.8);
+}
+
+#header div{
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+}
+
+#header div img{
+    width: 80px;
+    height: 80px;
+}
+
+#header div span{
+    font-size: 42px;
+    color: #F49913;
+}
+
+#header input {
+    width: 480px;
+    font-size: 24px;
+    padding: 20px 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    align-self: center;
+}
+
+#header ul{
+    display: flex;
+    list-style: none;
+}
+
+#header ul li{
+    display: flex;
+}
+
+#header ul li a{
+    color: #f3f3f3;
+    text-decoration: none;
+    font-size: 23px;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    transition: box-shadow 0.5s;
+    box-shadow: 0 0px 0  0 #F49913 inset;
+}
+
+#header ul li a:hover{
+    box-shadow: 0 -150px  0 #F49913 inset;
+}
+
+#cards{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 0;
+}
+
+#cards .card{
+    background-color: #007700;
+    width: 20%;
+    height: 450px;
+    border-radius: 25px;
+    box-shadow: 0 0 30px 1px black ;
+} 
+
+#cards .card img{
+    width: 100%;
+    border-radius: 25px 25px 0 0 ;
+    height: 330px;
+}
+
+#cards .card h3{
+    font-size: 22px;
+    color: #f3f3f3;
+    margin: 15px 15px 15px 25px;
+    font-weight: 300;
+}
+
+#cards .card p{
+    font-size: 16px;
+    color: #f3f3f3;
+    margin: 0 0 0 25px;
+    padding: 0;
+}
+
+p{
+    padding: 30px 80px;
+    font-size: 23px;
+    color: #f3f3f3;
+    background-color: #007700;
+}
+
+p span{
+    background-color: #F49913;
+    padding: 0 10px;
+    color: black;
+}
+
+#about{
+    display: flex;
+}
+
+#about img{
+    width: 30%;
+    object-fit: cover;
+}
+
+#about div{
+    width: 70%;
+    background-color: #007700e5;
+}
+
+#about div h4{
+    font-size: 35px;
+    color: #f3f3f3;
+    padding: 10px 40px ;
+    margin: 0;
+}
+
+#about div p{
+    padding: 0 40px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+form label{
+    color: #f3f3f3;
+    font-size: 20px;
+    padding: 15px 25px;
+    background-color: #007700ea;
+    margin: 15px;
+    border-radius: 0 25px;
+}
+form input{
+    width: 500px;
+    padding: 25px;
+    margin: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 0 25px;
+}
+
+button{
+    padding: 20px 30px;
+    font-size: 20px;
+    margin: 10px 0 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
